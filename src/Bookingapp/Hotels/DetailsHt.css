@@ -1,0 +1,156 @@
+
+.reservation-page {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #2c3e50;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #006ce4;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hotel-details-container {
+    background: #c5bebe6d;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.hotel-hero-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.hotel-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+.hotel-name-title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.hotel-location-subtitle {
+    font-size: 1.1rem;
+    color: #718096;
+    margin: 10px 0;
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.rating-score {
+    background: #febb02;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #003580;
+}
+
+.description-section h3, .amenities-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+.amenity-tags {
+    color: #4a5568;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+.booking-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.price-header {
+    margin-bottom: 25px;
+}
+
+.price-amount {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #003580;
+}
+
+.price-period {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.booking-specs {
+    margin-bottom: 25px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.reserve-btn {
+    width: 100%;
+    padding: 16px;
+    background: #006ce4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background: #0051ad;
+    transform: translateY(-2px);
+}
+
+.secure-text {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #64748b;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 900px) {
+    .hotel-info-grid {
+        grid-template-columns: 1fr;
+    }
+    .hotel-hero-img {
+        height: 300px;
+    }
+}

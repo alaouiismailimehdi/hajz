@@ -1,0 +1,165 @@
+.car-detail-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.car-detail-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+}
+
+
+.car-visual-side {
+    position: relative;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 500px;
+}
+
+.car-status-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #27ae60; 
+    color: white;
+}
+
+.car-status-tag[data-status="Booked"] { background: #e67e22; }
+.car-status-tag[data-status="Maintenance"] { background: #e74c3c; }
+
+
+.car-specs-side {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-category-label {
+    color: #3498db;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.car-title {
+    font-size: 32px;
+    margin: 10px 0 30px;
+    color: #1a1a1a;
+}
+
+.year-gray {
+    color: #aaa;
+    font-weight: 400;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.spec-item label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.spec-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.reservation-summary {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.pricing {
+    margin-bottom: 20px;
+}
+
+.amount {
+    font-size: 36px;
+    font-weight: 900;
+    color: #2c3e50;
+}
+
+.per-day {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.booking-btn {
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-btn:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+}
+
+.id-stamp {
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 900px) {
+    .car-detail-container {
+        grid-template-columns: 1fr;
+    }
+    .car-specs-side {
+        padding: 30px;
+    }
+}

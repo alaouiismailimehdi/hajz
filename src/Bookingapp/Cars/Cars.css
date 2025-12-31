@@ -1,0 +1,240 @@
+
+.cars-page-container {
+    padding: 40px 5%;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+}
+
+
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+
+.car-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+.image-container {
+    position: relative;
+    height: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 108, 228, 0.9);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.car-card-body {
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.car-model {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.car-year {
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #666;
+}
+
+.car-specs {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-value {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #006ce4;
+}
+
+.price-unit {
+    font-size: 13px;
+    color: #999;
+}
+
+.view-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 5px;
+    
+}
+.view-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.view-btn:hover {
+    background: #006ce4;
+}
+
+.mainbtn{
+    width: 50%;
+    margin-top: 3px;
+
+}
+.view-btnn  {
+    background: #646363;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 5px;
+
+}
+.view-btnn :hover {
+    background:#febb02 ;
+    color:#646363 ;
+}
+
+
+.search-section-wrapper {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.search-title {
+    font-size: 2.5rem;
+    color: #2d3436;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+
+.search-input-group {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    color: #a4b0be;
+}
+
+
+.search-bar-input {
+    width: 100%;
+    padding: 18px 55px; 
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 50px; 
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-bar-input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 15px 30px rgba(26, 115, 232, 0.15);
+    transform: translateY(-2px);
+}
+
+
+.clear-search {
+    position: absolute;
+    right: 15px;
+   ;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #747d8c;
+    background: linear-gradient(135deg, #006ce4 0%, #022e6d 100%);
+   
+}
+
+.clear-search:hover {
+    background: #dfe4ea;
+    color: #2f3542;
+}
+
+
+.search-subtitle {
+    margin-top: 20px;
+    color: #747d8c;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -1,0 +1,73 @@
+
+.add-container {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 20px;
+    background-color: #febb02;
+    border-radius: 12px;
+    box-shadow: 20px 4px 20px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.h {
+    text-align: center;
+    color: rgb(26, 26, 118);
+    margin-bottom: 30px;
+       
+    
+}
+
+.flight-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.Fg {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%; 
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: rgb(60, 60, 211);
+    outline: none;
+    background-color: #f0f4ff;
+}
+
+.submit-btn {
+    width: 100%; 
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(60, 60, 211);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(60, 60, 211);
+    transform: translateY(-2px);
+    border: 1px solid rgb(66, 117, 247);
+    transition: background-color 1s ease, color 0.3s ease, transform 0.2s ease; 
+}

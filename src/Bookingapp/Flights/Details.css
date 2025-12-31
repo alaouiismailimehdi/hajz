@@ -1,0 +1,96 @@
+.ticket-container {
+    padding: 50px 20px;
+    background-color: #f4f7f6;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flight-ticket {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.ticket-header {
+    background-color: rgb(60, 60, 211);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-logo {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+.airline-brand { display: flex; align-items: center; }
+
+
+.ticket-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.airport-section h1 { font-size: 3rem; margin: 0; color: #333; }
+.airport-section p { margin: 5px 0; color: #777; font-weight: bold; }
+.airport-section .time { font-size: 1.2rem; color: rgb(60, 60, 211); font-weight: bold; }
+
+.flight-icon-path { flex: 1; padding: 0 20px; color: #ccc; position: relative; }
+.line-path { height: 2px; background: #eee; width: 100%; margin: 15px 0; position: relative; }
+.plane-symbol { position: absolute; top: -12px; left: 45%; color: rgb(0, 0, 0); font-size: 1.5rem; }
+
+
+.ticket-footer {
+    border-top: 2px dashed #eee;
+    padding: 30px 40px;
+    background-color: #fafafa;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.info-grid label { display: block; font-size: 0.8rem; color: #999; text-transform: uppercase; margin-bottom: 5px; }
+.info-grid p { margin: 0; font-weight: bold; color: #333; }
+
+.ticket-price p { color: #2ecc71; font-size: 1.2rem; }
+
+
+.back-btn {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    color: rgb(60, 60, 211);
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+
+.barcode {
+    height: 50px;
+    width: 80%;
+    margin: 20px auto;
+    background: repeating-linear-gradient(90deg, #333, #333 2px, #fff 2px, #fff 4px);
+    opacity: 0.3;
+}

@@ -1,0 +1,99 @@
+.home-page-container {
+    padding: 20px;
+    background-color: #f4f7f6;
+}
+
+.hero-banner {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #006ce4 0%, #022e6d 100%);
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.row-section {
+    margin-bottom: 50px;
+}
+
+.row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.see-all {
+    color: #006ce4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.horizontal-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+    padding: 10px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.horizontal-slider::-webkit-scrollbar {
+    height: 8px;
+}
+.horizontal-slider::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.mini-card {
+    min-width: 250px; 
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+}
+
+.mini-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.mini-card-body {
+    padding: 15px;
+}
+
+.mini-card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price-box {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.mini-btn {
+    display: block;
+    text-align: center;
+    background: #006ce4;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}

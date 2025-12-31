@@ -1,0 +1,100 @@
+.main-footer {
+    background: linear-gradient(135deg, #006ce4 0%, #022e6d 100%);
+    color: white;
+    padding: 50px 0 20px 0;
+    font-family: Arial, sans-serif;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 22pt;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.brand-info p {
+    font-size: 11pt;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-section h3 {
+    font-size: 14pt;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11pt;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+    padding-left: 5px; 
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 10pt;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

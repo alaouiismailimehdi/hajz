@@ -1,0 +1,131 @@
+.home-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  
+  .search-section {
+    background-color: #febb02; 
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #febb02;
+    border-radius: 4px;
+  }
+  
+  .input-group {
+    flex: 1;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 11pt;
+  }
+  
+  .search-btn {
+    background-color: #0071c2; 
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .search-btn:hover {
+    background-color: #febb02;
+    font-size: larger;
+    color: #0071c2;
+  }
+  
+
+  .flights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .flight-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  
+  .flight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .airline { font-weight: bold; color: #555; }
+  .price { color: #0071c2; font-weight: 800; font-size: 1.2rem; }
+  
+  .book-btn {
+    width: 100%;
+   
+    padding: 10px;
+    border: 1px solid #0071c2;
+    background: transparent;
+    color: #0071c2;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .book-btn:hover {
+    background: #0071c2;
+    color: white;
+  }
+  
+  .no-results {
+    color: red;
+    align-items: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+ 
+  .bbtn{
+    
+    width: 100%;
+   
+    padding: 10px;
+    border: 1px solid #febb02;
+    background:  #febb02;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .bbtn:hover{
+    background-color: white;
+    color:#febb02 ;
+  }
