@@ -9,8 +9,8 @@ const iSt={
 
 
 export const getHotels=createAsyncThunk("Hotels/getHotels",async()=>{
-  return await axios.get("http://localhost:8000/dbHotels")
-          .then(res=>res.data)
+  return await axios.get("/data/booking.json")
+          .then(res=>res.data.dbHotels)
 
 })
 
@@ -34,4 +34,5 @@ const HotelSlice=createSlice({
       }
 })
 export default HotelSlice.reducer
+
 export const {ajt,sup,mod}=HotelSlice.actions
