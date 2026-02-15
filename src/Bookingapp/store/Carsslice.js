@@ -7,8 +7,8 @@ const ist={
 }
 
 export const getCars=createAsyncThunk("Cars/getCars",async()=>{
-  return await axios.get("http://localhost:8000/dbCars")
-          .then(res=>res.data)
+  return await axios.get("/data/booking.json")
+          .then(res=>res.data.dbCars)
 
 })
 
@@ -27,4 +27,5 @@ const Carsslice=createSlice({
   }
 })
 export default Carsslice.reducer
+
 export const{ajo,supp,modf}=Carsslice.actions
