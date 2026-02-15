@@ -7,8 +7,8 @@ const itState ={
 }
 
 export const getflights=createAsyncThunk("flight/getflights",async()=>{
-  return await axios.get("http://localhost:8000/dbflights")
-          .then(res=>res.data)
+  return await axios.get("/data/booking.json")
+          .then(res=>res.data.dbflights)
 
 })
 
@@ -33,4 +33,5 @@ const Flightslice=createSlice({
 })
 
 export default Flightslice.reducer
+
 export const {ajouter,supprimer,modifer}=Flightslice.actions
